@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antimo Francese</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1250px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        header {
+            padding-top: 42px;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 42px; /* Aggiunto per ricreare lo spazio sotto */
+            border-bottom: 1px solid #ddd; /* Aggiunto il bordo qui */
+        }
+
+        .header-content h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px; 
+            font-weight: 200; 
+            color: #5a5959;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            gap: 40px;
+            align-items: center; 
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 300; 
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #4A90E2;
+        }
+
+        .hero-section {
+            padding: 80px 0 60px 0;
+        }
+
+        .hero-left {
+            max-width: 800px;
+        }
+
+        .hero-right {
+            display: none;
+        }
+
+        .hero-section h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            font-weight: 400; 
+            margin-bottom: 20px;
+            color: #333;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .hero-section .subtitle {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 25px;
+            justify-content: flex-end;
+        }
+
+        .contact-links a {
+            color: #333;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .contact-links a:hover {
+            color: #666;
+        }
+
+        .contact-links i {
+            margin-right: 8px;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 30px;
+            font-weight: 400; 
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .bio-content {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+            margin-bottom: 40px;
+        }
+
+        .bio-text {
+            flex: 2;
+        }
+
+        .bio-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .bio-image img {
+            max-width: 250px;
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .bio-text p {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            text-align: justify;
+            color: #444;
+        }
+
+        .cv-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #333;
+            text-decoration: underline;
+            font-weight: 400; 
+            transition: color 0.3s ease;
+        }
+
+        .cv-link:hover {
+            color: #666;
+        }
+
+        .nav-socials {
+            display: flex;
+            gap: 25px; 
+        }
+
+        .nav-socials a {
+            color: #333;
+            text-decoration: none;
+            font-size: 22px; 
+            font-weight: 400; 
+            transition: color 0.3s ease;
+        }
+
+        .nav-socials a:hover {
+            color: #4A90E2; 
+        }
+
+        /* --- MODIFICA: Stili per la nuova sezione contatti --- */
+        .contact-info {
+            font-size: 16px;
+            line-height: 2;
+            color: #444;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px; 
+        }
+
+        .contact-info a {
+            color: #333;
+            text-decoration: none;
+            border-bottom: 1px solid #333;
+            transition: all 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: #4A90E2;
+            border-bottom-color: #4A90E2;
+        }
+        /* --- Fine Stili Contatti --- */
+
+
+        footer {
+            background-color: #f5f5f5;
+            padding: 30px 0;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        footer p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+            
+            header {
+                padding: 40px 0; /* Riduci il padding su mobile */
+            }
+
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+                padding: 0 20px;
+            }
+
+            nav {
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+
+            nav a {
+                font-size: 16px;
+            }
+            
+            .nav-socials {
+                gap: 20px;
+            }
+            
+            .nav-socials a {
+                font-size: 20px;
+            }
+
+            .hero-section h1 {
+                font-size: 36px;
+            }
+
+            .hero-section .subtitle {
+                font-size: 16px;
+            }
+
+            .bio-content {
+                flex-direction: column-reverse;
+            }
+
+            .bio-image img {
+                max-width: 200px;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>ANTIMO FRANCESE</h1>
+            <nav>
+                <a href="research.html">Research</a>
+                
+                <div class="nav-socials">
+                    <a href="https://x.com/antimofrancese" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="www.linkedin.com/in/antimo-francese-695107225" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="hero-section">
+        </section>
+
+        <section id="bio">
+            <h2 class="section-title">I look at numbers and tell you a story</h2>
+            <div class="bio-content">
+                <div class="bio-text">
+                    <p>
+                        I am currently a PhD student in Economics at the Department of Business and Economics at the University of Naples Parthenope. My research focuses on inequality and long-run growth, with strong interests in culture, economic history, and econometrics.
+                    </p>
+                    <p>
+                        I look at numbers and tell stories about them, exploring the patterns and relationships that shape economic outcomes across time and societies. My work seeks to understand the fundamental mechanisms that drive economic development and how historical forces continue to influence contemporary economic structures.
+                    </p>
+                    <a href="https://www.dropbox.com/scl/fi/5xw6va9mpap3kc168eyk4/cv.pdf?rlkey=dzasmqmnh9z2zvzdxy7o6vzry&st=u6aulw5s&dl=0" target="_blank" class="cv-link">View full CV</a>
+                </div>
+                <div class="bio-image">
+                    <img src="img.jpeg" alt="Antimo Francese">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-title">Contacts:</h2>
+            <div class="contact-info">
+                <p>
+                    <strong>Email:</strong> 
+                    <a href="mailto:antimo.francese1@studenti.uniparthenope.it">antimo.francese1@studenti.uniparthenope.it</a>
+                </p>
+                <p>
+                    <strong>Address:</strong> 
+                    Department of Business and Economics, University of Naples Parthenope, Via Generale Parisi 13, 80132 Napoli, Italy
+                </p>
+                <p>
+                    <strong>Phone:</strong> 
+                    <a href="tel:+39 3927977481">+39 3927977481</a>
+                </p>
+            </div>
+        </section>
+        </div>
+
+    <footer>
+        <p>&copy; 2025 Antimo Francese. All rights reserved.</p>
+    </footer>
+</body>
+</html>
