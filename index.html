@@ -39,14 +39,14 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-bottom: 42px; /* Aggiunto per ricreare lo spazio sotto */
-            border-bottom: 1px solid #ddd; /* Aggiunto il bordo qui */
+            padding-bottom: 42px;
+            border-bottom: 1px solid #ddd;
         }
 
         .header-content h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 28px; 
-            font-weight: 200; 
+            font-size: 28px;
+            font-weight: 200;
             color: #5a5959;
             margin: 0;
         }
@@ -54,14 +54,14 @@
         nav {
             display: flex;
             gap: 40px;
-            align-items: center; 
+            align-items: center;
         }
 
         nav a {
             color: #333;
             text-decoration: none;
             font-size: 18px;
-            font-weight: 300; 
+            font-weight: 300;
             transition: color 0.3s ease;
         }
 
@@ -69,96 +69,42 @@
             color: #4A90E2;
         }
 
-        .hero-section {
-            padding: 80px 0 60px 0;
-        }
-
-        .hero-left {
-            max-width: 800px;
-        }
-
-        .hero-right {
-            display: none;
-        }
-
-        .hero-section h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 48px;
-            font-weight: 400; 
-            margin-bottom: 20px;
-            color: #333;
-            padding-bottom: 0;
-            border-bottom: none;
-        }
-
-        .hero-section .subtitle {
-            font-size: 18px;
-            color: #666;
-            margin-bottom: 30px;
-            line-height: 1.8;
-        }
-
-        .contact-links {
-            display: flex;
-            gap: 25px;
-            justify-content: flex-end;
-        }
-
-        .contact-links a {
-            color: #333;
-            text-decoration: none;
-            font-size: 16px;
-            transition: color 0.3s ease;
-        }
-
-        .contact-links a:hover {
-            color: #666;
-        }
-
-        .contact-links i {
-            margin-right: 8px;
-        }
-
-        section {
-            padding: 60px 0;
+        /* MODIFICA PRINCIPALE: Aggiunto spazio sopra il titolo */
+        #bio {
+            padding-top: 50px; /* Spazio sopra il titolo */
         }
 
         .section-title {
             font-family: 'Playfair Display', serif;
             font-size: 30px;
-            font-weight: 400; 
-            margin-bottom: 40px;
+            font-weight: 400;
+            margin-bottom: 35px;
             color: #333;
+        }
+
+        /* MODIFICA: Layout principale a due colonne */
+        .main-content {
+            display: flex;
+            gap: 70px;
+            align-items: flex-start;
+            margin-top: 35px;
+        }
+
+        /* Colonna sinistra (biografia) */
+        .left-column {
+            flex: 2;
         }
 
         .bio-content {
             display: flex;
-            gap: 40px;
-            align-items: flex-start;
-            margin-bottom: 40px;
-        }
-
-        .bio-text {
-            flex: 2;
-        }
-
-        .bio-image {
-            flex: 1;
-            text-align: center;
-        }
-
-        .bio-image img {
-            max-width: 250px;
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            flex-direction: column;
+            gap: 35px;
         }
 
         .bio-text p {
             font-size: 16px;
             line-height: 1.8;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             text-align: justify;
             color: #444;
         }
@@ -168,7 +114,7 @@
             margin-top: 20px;
             color: #333;
             text-decoration: underline;
-            font-weight: 400; 
+            font-weight: 400;
             transition: color 0.3s ease;
         }
 
@@ -176,32 +122,42 @@
             color: #666;
         }
 
-        .nav-socials {
+        /* Colonna destra (foto + contatti) */
+        .right-column {
+            flex: 1;
             display: flex;
-            gap: 25px; 
+            flex-direction: column;
+            gap: 40px;
         }
 
-        .nav-socials a {
-            color: #333;
-            text-decoration: none;
-            font-size: 22px; 
-            font-weight: 400; 
-            transition: color 0.3s ease;
+        .bio-image {
+            text-align: center;
         }
 
-        .nav-socials a:hover {
-            color: #4A90E2; 
+        .bio-image img {
+            max-width: 100%;
+            width: 300px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
-        /* --- MODIFICA: Stili per la nuova sezione contatti --- */
         .contact-info {
             font-size: 16px;
-            line-height: 2;
+            line-height: 1.8;
             color: #444;
         }
 
+        .contact-info h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            font-weight: 400;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
         .contact-info p {
-            margin-bottom: 10px; 
+            margin-bottom: 15px;
         }
 
         .contact-info a {
@@ -215,8 +171,23 @@
             color: #4A90E2;
             border-bottom-color: #4A90E2;
         }
-        /* --- Fine Stili Contatti --- */
 
+        .nav-socials {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-socials a {
+            color: #333;
+            text-decoration: none;
+            font-size: 22px;
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+
+        .nav-socials a:hover {
+            color: #4A90E2;
+        }
 
         footer {
             background-color: #f5f5f5;
@@ -230,13 +201,29 @@
             font-size: 14px;
         }
 
+        @media (max-width: 992px) {
+            .main-content {
+                flex-direction: column;
+                gap: 40px;
+            }
+            
+            .right-column {
+                order: -1;
+                align-items: center;
+            }
+            
+            .bio-image img {
+                width: 250px;
+            }
+        }
+
         @media (max-width: 768px) {
             .container {
                 padding: 0 20px;
             }
             
             header {
-                padding: 40px 0; /* Riduci il padding su mobile */
+                padding: 35px 0;
             }
 
             .header-content {
@@ -244,6 +231,7 @@
                 align-items: flex-start;
                 gap: 20px;
                 padding: 0 20px;
+                padding-bottom: 35px;
             }
 
             nav {
@@ -263,24 +251,18 @@
                 font-size: 20px;
             }
 
-            .hero-section h1 {
-                font-size: 36px;
-            }
-
-            .hero-section .subtitle {
-                font-size: 16px;
-            }
-
-            .bio-content {
-                flex-direction: column-reverse;
-            }
-
-            .bio-image img {
-                max-width: 200px;
+            /* Riduci lo spazio su mobile se sembra troppo */
+            #bio {
+                padding-top: 30px; /* Meno spazio su mobile */
             }
 
             .section-title {
-                font-size: 28px;
+                font-size: 26px;
+                margin-bottom: 30px;
+            }
+
+            footer {
+                margin-top: 60px;
             }
         }
     </style>
@@ -288,15 +270,15 @@
 <body>
     <header>
         <div class="header-content">
-            <h1>ANTIMO FRANCESE</h1>
+            <h1><a href="index.html" style="text-decoration: none; color: inherit;">ANTIMO FRANCESE</a></h1>
             <nav>
                 <a href="research.html">Research</a>
-                
+                <!-- <a href="conferences.html">Conferences</a> -->
                 <div class="nav-socials">
                     <a href="https://x.com/antimofrancese" target="_blank" aria-label="Twitter">
                         <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="www.linkedin.com/in/antimo-francese-695107225" target="_blank" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/antimo-francese-695107225" target="_blank" aria-label="LinkedIn">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                     <a href="#" target="_blank" aria-label="GitHub">
@@ -308,48 +290,56 @@
     </header>
 
     <div class="container">
-        <section class="hero-section">
-        </section>
-
         <section id="bio">
             <h2 class="section-title">I look at numbers and tell you a story</h2>
-            <div class="bio-content">
-                <div class="bio-text">
-                    <p>
-                        I am currently a PhD student in Economics at the Department of Business and Economics at the University of Naples Parthenope. My research focuses on inequality and long-run growth, with strong interests in culture, economic history, and econometrics.
-                    </p>
-                    <p>
-                        I look at numbers and tell stories about them, exploring the patterns and relationships that shape economic outcomes across time and societies. My work seeks to understand the fundamental mechanisms that drive economic development and how historical forces continue to influence contemporary economic structures.
-                    </p>
-                    <a href="https://www.dropbox.com/scl/fi/5xw6va9mpap3kc168eyk4/cv.pdf?rlkey=dzasmqmnh9z2zvzdxy7o6vzry&st=u6aulw5s&dl=0" target="_blank" class="cv-link">View full CV</a>
+            
+            <div class="main-content">
+                <!-- Colonna sinistra: biografia -->
+                <div class="left-column">
+                    <div class="bio-content">
+                        <div class="bio-text">
+                            <p>
+                                I am a PhD student in Economics at the Department of Business and Economics of the University of Naples Parthenope. My research interests lie at the intersection of economic history, long-run development, and inequality. I use econometric methods to study how historical institutions and structural forces have shaped — and continue to shape — economic outcomes across time and space.
+                            </p>
+                            <p>
+                                My current work explores the persistence of pre-industrial agrarian institutions and their influence on industrialization patterns, with a focus on family firms and technological adoption in Italy. More broadly, I am interested in understanding the deep roots of economic development and the mechanisms through which the past continues to affect the present.
+                            </p>
+                            <a href="https://www.dropbox.com/scl/fi/mao6ebhfydt0g5w2amuk3/cv.pdf?rlkey=mmmcfga3kstcw0dir2l6s97ab&st=d4603045&dl=0" target="_blank" class="cv-link">View full CV</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="bio-image">
-                    <img src="img.jpeg" alt="Antimo Francese">
+                
+                <!-- Colonna destra: foto + contatti -->
+                <div class="right-column">
+                    <div class="bio-image">
+                        <img src="img.jpeg" alt="Antimo Francese">
+                    </div>
+                    
+                    <div class="contact-info">
+                        <h3>Contacts:</h3>
+                        <p>
+                            <strong>Email:</strong><br>
+                            <a href="mailto:antimo.francese1@studenti.uniparthenope.it">antimo.francese1@studenti.uniparthenope.it</a>
+                        </p>
+                        <p>
+                            <strong>Address:</strong><br>
+                            Department of Business and Economics,<br>
+                            University of Naples Parthenope,<br>
+                            Via Generale Parisi 13,<br>
+                            80132 Napoli, Italy
+                        </p>
+                        <p>
+                            <strong>Phone:</strong><br>
+                            <a href="tel:+39 3927977481">+39 3927977481</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <section id="contact">
-            <h2 class="section-title">Contacts:</h2>
-            <div class="contact-info">
-                <p>
-                    <strong>Email:</strong> 
-                    <a href="mailto:antimo.francese1@studenti.uniparthenope.it">antimo.francese1@studenti.uniparthenope.it</a>
-                </p>
-                <p>
-                    <strong>Address:</strong> 
-                    Department of Business and Economics, University of Naples Parthenope, Via Generale Parisi 13, 80132 Napoli, Italy
-                </p>
-                <p>
-                    <strong>Phone:</strong> 
-                    <a href="tel:+39 3927977481">+39 3927977481</a>
-                </p>
-            </div>
-        </section>
-        </div>
+    </div>
 
     <footer>
-        <p>&copy; 2025 Antimo Francese. All rights reserved.</p>
+        <p>&copy; 2026 Antimo Francese. All rights reserved.</p>
     </footer>
 </body>
 </html>
