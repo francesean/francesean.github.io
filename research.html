@@ -23,7 +23,7 @@
         }
 
         .container {
-            max-width: 1250px; /* Allineato all'header */
+            max-width: 1250px;
             margin: 0 auto;
             padding: 0 40px;
         }
@@ -51,13 +51,10 @@
             margin: 0;
         }
         
-        /* --- MODIFICA: Stile per rendere il nome cliccabile --- */
         .header-content h1 a {
             text-decoration: none;
-            color: inherit; /* Eredita il colore (#5a5959) da h1 */
+            color: inherit;
         }
-        /* --- Fine Modifica --- */
-
 
         nav {
             display: flex;
@@ -109,6 +106,22 @@
         /* --- Stili per la pagina Research --- */
         .research-item {
             margin-bottom: 40px;
+            display: flex;
+            gap: 25px;
+            align-items: flex-start;
+        }
+        
+        .research-image {
+            width: 150px;
+            height: 200px;
+            border-radius: 8px;
+            object-fit: cover;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+            flex-shrink: 0;
+        }
+        
+        .research-content {
+            flex: 1;
         }
         
         .research-item h3 {
@@ -124,6 +137,7 @@
             line-height: 1.8;
             color: #444;
             text-align: justify;
+            margin-bottom: 5px;
         }
         
         .research-item .authors {
@@ -143,7 +157,6 @@
             color: #4A90E2;
         }
         /* --- Fine Stili Research --- */
-
 
         footer {
             background-color: #f5f5f5;
@@ -193,6 +206,16 @@
             .section-title {
                 font-size: 28px;
             }
+            
+            .research-item {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .research-image {
+                width: 80px;
+                height: 80px;
+            }
         }
     </style>
 </head>
@@ -204,12 +227,12 @@
             </h1>
             <nav>
                 <a href="research.html">Research</a>
-                
+                <!-- <a href="conferences.html">Conferences</a> -->
                 <div class="nav-socials">
                     <a href="https://x.com/antimofrancese" target="_blank" aria-label="Twitter">
                         <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="www.linkedin.com/in/antimo-francese-695107225" target="_blank" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/antimo-francese-695107225" target="_blank" aria-label="LinkedIn">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                     <a href="#" target="_blank" aria-label="GitHub">
@@ -223,36 +246,27 @@
     <div class="container">
         
         <section id="research">
-            <h2 class="section-title">Research</h2>
+            <h2 class="section-title"><strong>Research</strong></h2>
             
             <div class="research-item">
-                <p>
-                    <a href="ffirms.html">A story of family firms</a>
-                </p>
-                <p>
-                    Descrizione di un altro progetto a cui stai lavorando. Puoi aggiungere quanti blocchi ".research-item" desideri per elencare tutti i tuoi lavori.
-                </p>
-
+                <!-- Immagine a sinistra del titolo della ricerca -->
+                <img src="shbraccianti.png" alt="Family Firms Research" class="research-image">
+                
+                <div class="research-content">
+                    <p>
+                        <a href="ffirms.html">A story of family firms: evidence from industrialization in Italy.</a>
+                    </p>
+                    <p>
+                        Working paper.
+                    </p>
+                </div>
             </div>
             
-            <div class="research-item">
-                <h3>Titolo di un Lavoro in Corso (Work in Progress)</h3>
-                <p class="authors">
-                    Solo (o con altri autori)
-                </p>
-                <p>
-                    Descrizione di un altro progetto a cui stai lavorando. Puoi aggiungere quanti blocchi ".research-item" desideri per elencare tutti i tuoi lavori.
-                </p>
-                <p>
-                    <a href="#">[Link a una bozza, se disponibile]</a>
-                </p>
-            </div>
-
         </section>
 
     </div>
     <footer>
-        <p>&copy; 2024 Antimo Francese. All rights reserved.</p>
+        <p>&copy; 2026 Antimo Francese. All rights reserved.</p>
     </footer>
 </body>
 </html>
