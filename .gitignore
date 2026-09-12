@@ -1,0 +1,16 @@
+# Quarto
+/.quarto/
+/_site/
+/_freeze/
+**/*_cache/
+**/*_files/
+site_libs/
+drafts/
+
+# Local tooling
+.claude/
+
+# OS
+.DS_Store
+
+**/*.quarto_ipynb

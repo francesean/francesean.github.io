@@ -1,0 +1,40 @@
+---
+title: "The stories beyond the numbers"
+pagetitle: "Antimo Francese"
+---
+
+::: {.main-content}
+
+::: {.left-column}
+::: {.bio-text}
+I am a PhD student in Economics at the Department of Business and Economics of the University of Naples Parthenope. My research interests lie at the intersection of economic history, long-run development, and inequality. I use econometric methods to study how historical institutions and structural forces have shaped — and continue to shape — economic outcomes across time and space.
+
+My current work explores the persistence of pre-industrial agrarian institutions and their influence on industrialization patterns, with a focus on family firms and technological adoption in Italy. More broadly, I am interested in understanding the deep roots of economic development and the mechanisms through which the past continues to affect the present.
+
+[View full CV](https://www.dropbox.com/scl/fi/nfuov63dggz4gftfbhfjn/cv.pdf?rlkey=jvwgh2vq0dnv06yojmkvdsjib&st=tgaf96o5&dl=0){.cv-link target="_blank"}
+:::
+:::
+
+::: {.right-column}
+::: {.bio-image}
+![](assets/img.jpeg){alt="Antimo Francese"}
+:::
+
+::: {.contact-info}
+### Contacts:
+
+**Email:**\
+[antimo.francese1@studenti.uniparthenope.it](mailto:antimo.francese1@studenti.uniparthenope.it)
+
+**Address:**\
+Department of Business and Economics,\
+University of Naples Parthenope,\
+Via Generale Parisi 13,\
+80132 Napoli, Italy
+
+**Phone:**\
+[+39 3927977481](tel:+393927977481)
+:::
+:::
+
+:::

@@ -1,0 +1,19 @@
+---
+title: "A story of family firms"
+subtitle: "Working paper - Last updated: January 2025"
+date: 2025-01-01
+author:
+  - name: Antimo Francese
+    affiliation: University of Naples Parthenope
+image: /assets/shbraccianti.png
+pub-info:
+  reference: "A story of family firms: evidence from industrialization in Italy."
+  status: "Working paper."
+  links:
+    - name: Download
+      url: "#"
+---
+
+::: {.abstract-text}
+[Abstract:]{.abstract-label} Does agricultural organization shape the process of industrialization? This paper investigates the long-run persistence of pre-industrial agrarian institutions on the structure of Italian manufacturing at the dawn of the twentieth century. Exploiting variation in the prevalence of sharecropping and day-labour contracts across Italian districts from the 1901 Agricultural Census, we examine how these contrasting labour arrangements shaped the formation of family firms, as recorded in the first Industrial Census 1911. We further explore the technological dimension, analysing whether agrarian legacies conditioned the adoption of mechanical engines across sectors and localities.
+:::

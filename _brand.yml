@@ -1,0 +1,31 @@
+meta:
+  name: Antimo Francese
+  link: https://www.afrancese.com
+
+color:
+  palette:
+    dark: "#333333"
+    body: "#444444"
+    gray: "#666666"
+    light-gray: "#f5f5f5"
+    blue: "#4A90E2"
+  foreground: dark
+  background: white
+  primary: dark
+  secondary: gray
+
+typography:
+  fonts:
+    - family: Lato
+      source: google
+      weight: [300, 400, 700]
+  base:
+    family: Lato
+    line-height: 1.6
+  headings:
+    family: Lato
+    weight: 400
+    color: dark
+  link:
+    color: dark
+    decoration: underline

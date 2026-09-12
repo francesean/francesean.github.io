@@ -1,0 +1,13 @@
+---
+pagetitle: "Research"
+listing:
+  - id: working-papers
+    contents: "working-papers/*/index.qmd"
+    sort: "date desc"
+    template: "../html/research/listing.ejs"
+---
+
+## Working Papers
+
+::: {#working-papers}
+:::

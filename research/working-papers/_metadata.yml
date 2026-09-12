@@ -1,0 +1,6 @@
+# Settings shared by every paper page
+date-format: "MMMM YYYY"
+format:
+  html:
+    template-partials:
+      - ../../html/research/title-block.html
