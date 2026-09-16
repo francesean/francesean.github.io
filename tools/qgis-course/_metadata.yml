@@ -1,0 +1,18 @@
+# Settings for the QGIS course page only (this folder).
+toc: true
+toc-location: left
+toc-depth: 2
+toc-title: "Contents"
+number-sections: true
+number-depth: 2
+anchor-sections: true
+smooth-scroll: true
+bibliography: references.bib
+link-citations: true
+format:
+  html:
+    css: qgis-course.css
+    grid:
+      sidebar-width: 250px
+      body-width: 760px
+      margin-width: 0px

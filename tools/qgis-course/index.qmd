@@ -9,6 +9,9 @@ date-format: "MMMM D, YYYY"
 abstract: |
   Economists increasingly work with data that have a location: regions, cities, firms, households, satellite pixels. A Geographic Information System (GIS) is the tool that lets you combine such data, measure things about them, and map them. This course introduces QGIS, a free and open-source GIS, through two complete tasks that mirror what applied researchers actually do: joining a statistical table to a set of regional boundaries to produce a publication-quality map, and summarizing a satellite raster (nighttime lights) by region to build a new variable that you can export and use in Stata, R, or Excel. Everything is done by pointing and clicking in QGIS; every file used is open data.
 abstract-title: "Summary"
+resources:
+  - "data/**"
+  - "outputs/**"
 ---
 
 ::: {.callout-tip appearance="simple" icon="false"}
