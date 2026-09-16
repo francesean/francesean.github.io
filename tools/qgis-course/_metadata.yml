@@ -13,6 +13,8 @@ format:
   html:
     css: qgis-course.css
     grid:
-      sidebar-width: 250px
+      # symmetric grid, so that wide figures (.column-page) stay centered on the text column
+      sidebar-width: 240px
       body-width: 760px
-      margin-width: 0px
+      margin-width: 240px
+      gutter-width: 2rem

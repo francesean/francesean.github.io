@@ -107,22 +107,7 @@ Store and share data in WGS 84 (`EPSG:4326`). Compute areas, densities, and sums
 
 Open QGIS. The window has five parts you will use all the time.
 
-::: {.column-page}
-```{=html}
-<figure class="annot-figure">
-<div class="annot">
-  <img src="figures/shot01_interface.png" alt="The QGIS main window with a vector layer of European regions loaded">
-  <span class="marker" style="left:67%;top:1.8%">1</span>
-  <span class="marker" style="left:2%;top:8.5%">2</span>
-  <span class="marker" style="left:2%;top:56%">3</span>
-  <span class="marker" style="left:45%;top:35%">4</span>
-  <span class="marker" style="left:96.5%;top:8.5%">5</span>
-  <span class="marker" style="left:96.5%;top:95%">6</span>
-</div>
-<figcaption>The QGIS window after loading the NUTS-2 boundaries (QGIS 3.34 LTR, macOS). (1) Toolbars; (2) Browser panel; (3) Layers panel; (4) map canvas; (5) Processing Toolbox; (6) status bar with scale and project CRS.</figcaption>
-</figure>
-```
-:::
+![The QGIS window after loading the NUTS-2 boundaries (QGIS 3.34 LTR, macOS). (1) Toolbars; (2) Browser panel; (3) Layers panel; (4) map canvas; (5) Processing Toolbox; (6) status bar with scale and project CRS.](figures/shot01_interface.png){#fig-interface .shot .column-page}
 
 1. **Toolbars** hold the buttons for the most common actions: open and save projects, add layers, pan and zoom, identify a feature, select features, open the attribute table.
 2. The **Browser panel** is a file explorer restricted to spatial data. It shows a shapefile as a single item rather than five files, which is convenient. Right-click a folder and choose *Add as a Favorite* to keep your project folder one click away.

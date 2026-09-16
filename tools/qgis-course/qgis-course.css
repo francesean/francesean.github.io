@@ -7,15 +7,6 @@
 kbd { font-size: .8em; color: #333; background: #fafafa; border: 1px solid #cfcfcf; border-bottom-width: 2px;
       border-radius: 4px; padding: .05em .4em; }
 
-/* annotated screenshot of the QGIS window */
-.annot-figure { text-align: center; margin: 2rem 0; }
-.annot { position: relative; display: inline-block; max-width: 1100px; width: 100%; text-align: left; }
-.annot img { width: 100%; display: block; border: 1px solid #e2e2e2; border-radius: 4px; }
-.annot .marker { position: absolute; width: 26px; height: 26px; border-radius: 50%; background: #c0392b; color: #fff;
-                 font: 700 13px/26px -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; text-align: center;
-                 transform: translate(-50%, -50%); box-shadow: 0 0 0 2px #fff, 0 1px 3px rgba(0,0,0,.35);
-                 z-index: 1000; pointer-events: none; }
-
 /* screenshots, figures and captions */
 img.shot { border: 1px solid #e2e2e2; border-radius: 4px; }
 figure { margin: 2rem 0; }
