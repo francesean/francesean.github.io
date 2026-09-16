@@ -1,0 +1,17 @@
+---
+title: "Tools"
+---
+
+A list of the tools I use for my research and writing.
+
+## Data & Analysis
+
++ [R](https://www.r-project.org/) - Statistical computing and econometrics.
++ [Stata](https://www.stata.com/) - Applied econometrics.
++ [QGIS](https://qgis.org/) - Geographic data and historical maps.
+
+## Writing
+
++ [Quarto](https://quarto.org/) - Papers, slides and this website.
++ [LaTeX](https://www.latex-project.org/) - Typesetting.
++ [Zotero](https://www.zotero.org/) - Reference management.
