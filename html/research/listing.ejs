@@ -1,21 +1,18 @@
 ```{=html}
-<div class="research-list">
+<div class="post-list">
 <% for (const item of items) { %>
-  <div class="research-item">
-    <% if (item.image) { %>
-    <a href="<%- item.path %>" class="research-image-link">
-      <img src="<%- item.image %>" alt="<%= item.title %>" class="research-image">
-    </a>
+  <article class="post-entry">
+    <header class="entry-header">
+      <h2><%= ((item['pub-info'] && item['pub-info'].reference) || item.title).replace(/\.$/, '') %></h2>
+    </header>
+    <% if (item.description) { %>
+    <div class="entry-content"><%= item.description %></div>
     <% } %>
-    <div class="research-content">
-      <p class="research-title">
-        <a href="<%- item.path %>"><%= (item['pub-info'] && item['pub-info'].reference) || item.title %></a>
-      </p>
-      <% if (item['pub-info'] && item['pub-info'].status) { %>
-      <p class="research-status"><%= item['pub-info'].status %></p>
-      <% } %>
-    </div>
-  </div>
+    <footer class="entry-footer">
+      <%= [item.date, item.author ? [].concat(item.author).join(', ') : null, item['pub-info'] && item['pub-info'].status ? item['pub-info'].status.replace(/\.$/, '') : null].filter(Boolean).join(' · ') %>
+    </footer>
+    <a class="entry-link" href="<%- item.path %>" aria-label="<%= item.title %>"></a>
+  </article>
 <% } %>
 </div>
 ```

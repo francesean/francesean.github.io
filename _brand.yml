@@ -4,28 +4,12 @@ meta:
 
 color:
   palette:
-    dark: "#333333"
-    body: "#444444"
-    gray: "#666666"
+    ink: "#1e1e1e"
+    gray: "#6c6c6c"
     light-gray: "#f5f5f5"
-    blue: "#4A90E2"
-  foreground: dark
+    border: "#e6e6e6"
+    purple: "#8e7bd0"
+  foreground: ink
   background: white
-  primary: dark
+  primary: ink
   secondary: gray
-
-typography:
-  fonts:
-    - family: Lato
-      source: google
-      weight: [300, 400, 700]
-  base:
-    family: Lato
-    line-height: 1.6
-  headings:
-    family: Lato
-    weight: 400
-    color: dark
-  link:
-    color: dark
-    decoration: underline

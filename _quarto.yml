@@ -19,35 +19,24 @@ website:
   navbar:
     pinned: false
     search: false
+    collapse: false
     right:
       - text: "Research"
         href: research/index.qmd
       - text: "Tools"
         href: tools/index.qmd
-      - icon: twitter-x
-        href: https://x.com/antimofrancese
-        target: _blank
-        aria-label: "X / Twitter"
-      - icon: linkedin
-        href: https://www.linkedin.com/in/antimo-francese-695107225
-        target: _blank
-        aria-label: "LinkedIn"
-      - icon: github
-        href: https://github.com/francesean
-        target: _blank
-        aria-label: "GitHub"
   page-footer:
-    center: "&copy; 2026 Antimo Francese. All rights reserved."
-    right: "Made with [Quarto](https://quarto.org/)"
+    center: "&copy; 2026 Antimo Francese · Made with [Quarto](https://quarto.org/)"
 
 format:
   html:
     theme: [brand, html/theme.scss]
     toc: false
+    anchor-sections: false
     lang: en
     link-external-newwindow: true
     grid:
-      body-width: 1120px
+      body-width: 680px
       sidebar-width: 0px
       margin-width: 0px
 

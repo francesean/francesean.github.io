@@ -1,9 +1,12 @@
 ---
 pagetitle: "Research"
+body-classes: list
 listing:
   - id: working-papers
     contents: "working-papers/*/index.qmd"
     sort: "date desc"
+    date-format: "MMMM YYYY"
+    max-description-length: 600
     template: "../html/research/listing.ejs"
 ---
 
