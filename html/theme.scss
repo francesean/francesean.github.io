@@ -1,14 +1,13 @@
 /*-- scss:defaults --*/
-// Look and feel modelled on pascalmichaillat.org
+// Minimal, neutral look ("righe": rows separated by hairlines, no cards)
 
 // Palette
 $ink: #1e1e1e;          // main text
-$ink-2: #6c6c6c;        // secondary text
-$rule: #e6e6e6;         // borders
-$page-gray: #f5f5f5;    // header strip and list/home backgrounds
-$purple: #8e7bd0;       // accent (active menu item, link underlines, hover)
-$purple-dark: #5e42bc;
-$purple-light: #e5e1f4; // hover background of cards and buttons
+$ink-2: #6f6f6f;        // secondary text
+$rule: #e6e6e3;         // hairlines (paper list, buttons, photo)
+$page-bg: #fcfcfb;      // background of every page
+$line: #c9c9c4;         // underline of links
+$hover-bg: #f1f1ee;     // hover background of buttons
 
 // Typography: system font stack (San Francisco on Mac, Segoe UI on Windows…).
 // To go back to Lato, replace the stack with: "Lato", sans-serif
@@ -22,12 +21,12 @@ $headings-font-weight: 700;
 $font-size-base: 1.125rem; // 18px
 $line-height-base: 1.5;
 
-$body-bg: #ffffff;
+$body-bg: $page-bg;
 $body-color: $ink;
 $link-color: $ink;
 $link-hover-color: $ink;
 
-$navbar-bg: $page-gray;
+$navbar-bg: $page-bg;
 $navbar-fg: $ink;
 $navbar-hl: $ink;
 $footer-bg: $body-bg;
@@ -36,7 +35,7 @@ $footer-fg: $ink-2;
 /*-- scss:rules --*/
 
 // ---------------------------------------------------------------------------
-// Header: grey strip, name on the left, pages on the right
+// Header: name on the left, pages on the right
 // ---------------------------------------------------------------------------
 // Keep the header in the normal flow (no sticky/headroom behaviour)
 #quarto-header.fixed-top {
@@ -51,7 +50,7 @@ body.nav-fixed {
 .navbar {
   padding: 0;
   min-height: 52px;
-  background-color: $page-gray;
+  background-color: $page-bg;
   border-bottom: none;
   box-shadow: none;
 
@@ -102,11 +101,6 @@ body.nav-fixed {
     &.active,
     &.active:hover {
       color: $ink;
-    }
-
-    &.active .menu-text {
-      padding-bottom: 2px;
-      border-bottom: 2px solid $purple;
     }
   }
 }
@@ -172,16 +166,16 @@ main.content > section:first-of-type > h2:first-child {
   margin-top: 8px;
 }
 
-// Links inside text: same colour as text, purple underline
+// Links inside text: same colour as text, light grey underline
 main.content a:not(.button):not(.entry-link) {
   color: currentColor;
   text-decoration: underline;
-  text-decoration-color: $purple;
+  text-decoration-color: $line;
   text-decoration-skip-ink: auto;
   text-underline-offset: 2px;
 
   &:hover {
-    text-decoration-color: $purple-dark;
+    text-decoration-color: $ink;
   }
 }
 
@@ -196,7 +190,7 @@ hr {
 // Home: full-height profile (photo, name, bio, icons, buttons)
 // ---------------------------------------------------------------------------
 body.home {
-  background-color: $page-gray;
+  background-color: $page-bg;
 
   #quarto-header,
   footer.footer {
@@ -275,13 +269,14 @@ img.profile-photo {
     transition: color 0.15s ease-in-out;
 
     &:hover {
-      color: $purple;
+      color: $ink-2;
     }
   }
 
-  svg {
-    width: 1.6rem;
-    height: 1.6rem;
+  // Bootstrap Icons (loaded by Quarto): https://icons.getbootstrap.com
+  .bi {
+    font-size: 1.5rem;
+    line-height: 1;
   }
 }
 
@@ -299,47 +294,46 @@ a.button {
   padding: 10px 18px;
   color: $ink;
   text-decoration: none;
-  background: #ffffff;
+  background: transparent;
   border: 1px solid $rule;
-  border-radius: 8px;
+  border-radius: 6px;
   transition: all 0.15s ease-in-out;
 
   &:hover {
     color: $ink;
-    background: $purple-light;
-    border-color: $purple;
+    background: $hover-bg;
+    border-color: $line;
   }
 }
 
 // ---------------------------------------------------------------------------
-// List pages (Research): grey background, white cards
+// List pages (Research): one row per paper, separated by hairlines
 // ---------------------------------------------------------------------------
-body.list {
-  background-color: $page-gray;
+.post-list {
+  border-top: 1px solid $rule;
 }
 
 .post-entry {
   position: relative;
-  margin-bottom: 24px;
-  padding: 24px;
-  background: #ffffff;
-  border: 1px solid $rule;
-  border-radius: 8px;
-  transition: all 0.15s ease-in-out;
-
-  &:hover {
-    background: $purple-light;
-    border-color: $purple;
-  }
+  padding: 24px 0;
+  border-bottom: 1px solid $rule;
 
   .entry-header h2 {
     font-size: 1.25rem;
     line-height: 1.3;
     margin: 0 !important;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-underline-offset: 3px;
+    transition: text-decoration-color 0.15s ease-in-out;
+  }
+
+  &:hover .entry-header h2 {
+    text-decoration-color: $ink;
   }
 
   .entry-content {
-    margin: 20px 0;
+    margin: 12px 0;
     color: $ink-2;
     font-size: 1rem;
     line-height: 1.5;
@@ -462,14 +456,12 @@ footer.footer,
     font-size: 2rem;
   }
 
-  .social-icons svg {
-    width: 1.5rem;
-    height: 1.5rem;
+  .social-icons .bi {
+    font-size: 1.4rem;
   }
 
   .post-entry {
-    padding: 16px;
-    margin-bottom: 16px;
+    padding: 16px 0;
 
     .entry-header h2 {
       font-size: 1.125rem;
