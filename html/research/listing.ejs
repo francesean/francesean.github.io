@@ -6,7 +6,7 @@
       <h2><%= ((item['pub-info'] && item['pub-info'].reference) || item.title).replace(/\.$/, '') %></h2>
     </header>
     <footer class="entry-footer">
-      <%= [item.date, item.author ? [].concat(item.author).join(', ') : null, item['pub-info'] && item['pub-info'].status ? item['pub-info'].status.replace(/\.$/, '') : null].filter(Boolean).join(' · ') %>
+      <%= [item.date, item.author ? [].concat(item.author).join(', ') : null, item['pub-info'] && item['pub-info'].status ? item['pub-info'].status.replace(/\.$/, '') : null, item['pub-info'] && item['pub-info'].note].filter(Boolean).join(' · ') %>
     </footer>
     <a class="entry-link" href="<%- item.path %>" aria-label="<%= item.title %>"></a>
   </article>

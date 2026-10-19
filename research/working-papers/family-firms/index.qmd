@@ -8,6 +8,7 @@ image: /assets/shbraccianti.png
 pub-info:
   reference: "A story of family firms"
   status: "Working paper."
+  note: "Draft Written"
   links:
     - name: Download
       url: "#"
