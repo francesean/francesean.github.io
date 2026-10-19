@@ -6,7 +6,6 @@ listing:
     contents: "working-papers/*/index.qmd"
     sort: "date desc"
     date-format: "MMMM YYYY"
-    max-description-length: 600
     template: "../html/research/listing.ejs"
 ---
 
