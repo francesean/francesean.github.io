@@ -25,7 +25,7 @@ My current work explores the persistence of pre-industrial agrarian institutions
 
 ```{=html}
 <div class="social-icons">
-  <a href="https://www.dropbox.com/scl/fi/o2270ghnwrhi1mxt2458r/cv.pdf?rlkey=cv18tjz9uaxv1dnue6n09vtnl&amp;st=4vmb6fm0&amp;dl=0" target="_blank" rel="noopener noreferrer" title="CV" aria-label="CV"><i class="bi bi-file-earmark-person"></i></a>
+  <a href="https://www.dropbox.com/scl/fi/lu8sfzs5frrkkk39448o0/cv.pdf?rlkey=3x2ex2xanerugrad26bqggu4h&st=tpi3lykv&dl=0" target="_blank" rel="noopener noreferrer" title="CV" aria-label="CV"><i class="bi bi-file-earmark-person"></i></a>
   <a href="mailto:antimo.francese1@studenti.uniparthenope.it" title="Email" aria-label="Email"><i class="bi bi-envelope"></i></a>
   <a href="https://github.com/francesean" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub"><i class="bi bi-github"></i></a>
   <a href="https://x.com/antimofrancese" target="_blank" rel="noopener noreferrer" title="X" aria-label="X"><i class="bi bi-twitter-x"></i></a>
